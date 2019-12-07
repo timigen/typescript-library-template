@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/timigen/typescript-library-template/issues"
   },
-  "homepage": "https://github.com/timigen/typescript-library-template#readme"
+  "homepage": "https://github.com/timigen/typescript-library-template#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  }
 }
