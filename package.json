@@ -9,8 +9,8 @@
     "qc": "npm run format && npm run lint && npm run coverage",
     "build": "tsc",
     "build-prd": "npm run qc && npm run build",
-    "test": "mocha -r ts-node/register specs/**/*.spec.ts",
-    "coverage": "nyc -r text -e .ts -x \"specs/*.spec.ts\" npm run test"
+    "test": "mocha -r ts-node/register specs/*.spec.ts --exit",
+    "coverage": "nyc --reporter=html --reporter=lcov --reporter=text-summary -e .ts -x \"specs/*.spec.ts\" npm run test"
   },
   "repository": {
     "type": "git",
