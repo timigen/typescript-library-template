@@ -1,0 +1,6 @@
+coverage/
+src/
+specs/
+
+README.md
+*.json
