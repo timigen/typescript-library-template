@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ./src/*.ts && prettier --write ./specs/*.spec.ts",
+    "lint": "tslint --project tsconfig.json",
+    "qc": "npm run format && npm run lint && npm run coverage",
+    "build": "tsc",
+    "build-prd": "npm run qc && npm run build",
+    "test": "mocha -r ts-node/register specs/**/*.spec.ts",
+    "coverage": "nyc -r text -e .ts -x \"specs/*.spec.ts\" npm run test"
   },
   "repository": {
     "type": "git",
@@ -17,7 +23,13 @@
   },
   "homepage": "https://github.com/timigen/typescript-library-template#readme",
   "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
     "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
     "tslint": "^5.20.1",
     "typescript": "^3.7.3"
   }

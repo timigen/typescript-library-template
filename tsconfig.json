@@ -4,7 +4,21 @@
       "noImplicitAny": false,
       "module": "commonjs",
       "declaration": true,
-      "target": "es5",
-      "removeComments": true
-  }
+      "target": "es6",
+      "removeComments": true,
+      "typeRoots": [
+        "./node_modules/@types",
+        "./custom_definitions"
+    ],
+    "types": [
+      "chai",
+      "mocha"
+    ]
+  },
+  "include": [
+    "src/**/*", "index.ts"
+  ],
+  "exclude": [
+    "specs/*.spec.ts"
+  ]
 }
