@@ -2,5 +2,6 @@ coverage/
 src/
 specs/
 
+index.ts
 README.md
 *.json
