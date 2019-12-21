@@ -11,8 +11,7 @@
         "./custom_definitions"
     ],
     "types": [
-      "chai",
-      "mocha"
+      "jest"
     ]
   },
   "include": [
@@ -20,6 +19,6 @@
     "index.ts"
   ],
   "exclude": [
-    "specs/*.spec.ts"
+    "tests/*.spec.ts"
   ]
 }
