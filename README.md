@@ -6,7 +6,7 @@ Canonical typescript library template
 ## Commands
 
 `npm run build`     - ts compilation to `./dist` folder
-`npm run build-prd` - prettier, tslint, mocha specs, ts compilation to `./dist` folder
+`npm run build-prd` - prettier, tslint, jest specs, ts compilation to `./dist` folder
 
 `npm run format`    - prettier
 `npm run lint`      - tslint
@@ -15,5 +15,5 @@ Canonical typescript library template
 
 ## Unit Tests
 
-`npm test` - run mocha specs
+`npm test` - run jest specs
 
