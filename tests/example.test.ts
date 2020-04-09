@@ -1,4 +1,3 @@
-
 import { Example } from "../src/example/example";
 
 test("Example", () => {

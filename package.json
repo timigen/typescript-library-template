@@ -1,15 +1,15 @@
 {
   "name": "typescript-library-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "format": "prettier --write ./src/**/*.ts && prettier --write ./specs/*.spec.ts",
+    "format": "prettier --write ./src/**/*.ts && prettier --write ./tests/*.test.ts",
     "lint": "tslint --project tsconfig.json",
-    "qc": "npm run format && npm run lint && npm run coverage",
-    "build": "tsc",
-    "build-prd": "npm run qc && npm run build",
+    "qc": "npm run format && npm run lint && npm test",
+    "build-dev": "tsc",
+    "build": "npm run qc && tsc",
     "test": "jest --config=jest.config.js --coverage"
   },
   "repository": {
