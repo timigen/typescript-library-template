@@ -11,7 +11,7 @@ Canonical typescript library template
 `npm run format`    - prettier
 `npm run lint`      - tslint
 
-`npm run qc`        - prettier, tslint, mocha specs
+`npm run qc`        - prettier, tslint, jest specs
 
 ## Unit Tests
 
